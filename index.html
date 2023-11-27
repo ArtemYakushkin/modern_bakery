@@ -23,7 +23,9 @@
               <li><a class="header__link" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
-          <button class="header__btn" type="button">Замовити дзвінок</button>
+          <button class="header__btn modal__btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -63,6 +65,7 @@
               </p>
             </div>
             <img
+              class="traditions__img"
               src="./images/baker-man.jpg"
               alt="Чоловік пекар дивиться із посмішкою на батони"
             />
@@ -73,7 +76,7 @@
       <section class="cookers" id="cookers">
         <div class="container">
           <h2 class="section-title cookers__section-title">
-            Наші найкращі
+            Наші найкращі<br />
             <span>шеф -кухарі</span>
           </h2>
           <ul class="cookers__list">
@@ -263,5 +266,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
