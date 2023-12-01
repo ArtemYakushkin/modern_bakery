@@ -1,0 +1,141 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 38, 26, 0.40);
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
+    border-radius: 32px;
+    padding: 128px;
+    background: var(--color-primary-light);
+    overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0;
+}
+
+.modal__btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.3s, border-radius 0.3s;
+}
+
+.modal__btn-close:hover {
+    border: 2px solid var(--color-primary-dark);
+    border-radius: 50%;
+}
+
+.modal__form-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.31;
+    margin-bottom: 8px;
+}
+
+.modal__form-text {
+    color: var(--color-form-text);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.modal__form {
+    position: relative;
+}
+
+.modal__form-box {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.modal__form-input {
+    width: 100%;
+    padding: 16px 42px;
+    font-size: 16px;
+    line-height: 1.17;
+    border-radius: 8px;
+    border: 1px solid var(--color-copy);
+    background: transparent;
+}
+
+.modal__form-input:focus {
+    border-color: var(--color-brand-normal);
+}
+
+.modal__form-input::placeholder {
+    color: var(--color-copy);
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.modal__form-input:focus::placeholder {
+    color: var(--color-primary-dark);
+}
+
+.modal__form-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    background: var(--color-brand-normal);
+    color: var(--color-primary-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: 2px solid var(--color-brand-normal);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal__form-btn:hover {
+    background: transparent;
+    color: var(--color-brand-normal);
+}
+
+.modal__form-policy {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.modal__form-link {
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+}
+
+.modal__baton {
+    position: absolute;
+    width: 180px;
+    height: 240px;
+    background-size: 100%;
+    bottom: -100px;
+    right: -100px;
+}

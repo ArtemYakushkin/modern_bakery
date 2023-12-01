@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="header">
@@ -26,6 +26,51 @@
           <button class="header__btn modal__btn-open" type="button">
             Замовити дзвінок
           </button>
+          <button class="header__burger mobile__btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!-- mobile menu -->
+
+          <div class="mobile-menu">
+            <button
+              class="mobile-menu__close-btn mobile__btn-close"
+              type="button"
+            >
+              <img src="./images/close.png" alt="" />
+            </button>
+            <a class="logo mobile-menu__logo" href="#">
+              <img
+                src="./images/mobile/logo-mobile.svg"
+                alt="Логотип сучасної пекарні"
+              />
+            </a>
+            <ul class="mobile-menu__list">
+              <li>
+                <a class="mobile-menu__link" href="#traditions"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#cookers">Шеф-кухарі</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#formats">Формати</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+            <img
+              class="mobile-menu__baton"
+              src="./images/modal-baton.png"
+              alt=""
+            />
+          </div>
+
+          <!-- ----------- -->
         </div>
       </div>
     </header>
@@ -34,10 +79,13 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title"><span>Сучасна</span> пекарня</h1>
+          <button class="hero__btn modal__btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
 
-      <section class="advantages">
+      <!-- <section class="advantages">
         <div class="container">
           <h2 class="hidden">Наші переваги</h2>
           <ul class="advantages__list">
@@ -46,9 +94,9 @@
             <li class="advantages__item">Досвідчена управлінська команда</li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="traditions" id="traditions">
+      <!-- <section class="traditions" id="traditions">
         <div class="container">
           <div class="traditions__wrapper">
             <div class="traditions__left">
@@ -71,9 +119,9 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="cookers" id="cookers">
+      <!-- <section class="cookers" id="cookers">
         <div class="container">
           <h2 class="section-title cookers__section-title">
             Наші найкращі<br />
@@ -120,9 +168,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="formats" id="formats">
+      <!-- <section class="formats" id="formats">
         <div class="container">
           <h2 class="section-title formats__section-title">Формати</h2>
           <div class="formats__slider">
@@ -134,6 +182,11 @@
             <ul class="formats__list">
               <li class="formats__item">
                 <article class="formats__article">
+                  <img
+                    class="formats__img"
+                    src="./images/bakery-1.jpg"
+                    alt=""
+                  />
                   <h3 class="formats__title" lang="en">Walrus</h3>
                   <p class="formats__text">Площа: до 120 м2</p>
                   <p class="formats__text">Меню: розширене меню</p>
@@ -146,6 +199,11 @@
               </li>
               <li class="formats__item">
                 <article class="formats__article">
+                  <img
+                    class="formats__img"
+                    src="./images/bakery-2.jpg"
+                    alt=""
+                  />
                   <h3 class="formats__title" lang="en">Horseshoe</h3>
                   <p class="formats__text">Площа: до 25 м2</p>
                   <p class="formats__text">Меню: найпопулярніші позиції меню</p>
@@ -157,6 +215,11 @@
               </li>
               <li class="formats__item">
                 <article class="formats__article">
+                  <img
+                    class="formats__img"
+                    src="./images/bakery-3.jpg"
+                    alt=""
+                  />
                   <h3 class="formats__title" lang="en">Handlebar</h3>
                   <p class="formats__text">Площа: до 15 м2</p>
                   <p class="formats__text">Меню: найпопулярніші позиції меню</p>
@@ -174,9 +237,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="contacts" id="contacts">
+      <!-- <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrapper">
             <div class="contacts__form-group">
@@ -248,10 +311,10 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <a class="logo" href="#">
@@ -317,9 +380,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden">
+    <!-- <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close" type="button">
           <img src="./images/close.png" alt="" />
@@ -378,8 +441,9 @@
           <img class="modal__baton" src="./images/modal-baton.png" alt="" />
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
