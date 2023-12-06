@@ -7,3 +7,11 @@
 .section-title span {
     color: var(--color-brand-normal);
 }
+
+@media (max-width: $bp-tablet) {
+
+    .section-title {
+        font-size: 32px;
+    }
+
+}

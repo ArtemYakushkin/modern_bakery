@@ -39,3 +39,28 @@
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
 }
+
+@media (max-width: $bp-sub-tablet) {
+    
+    .traditions__img {
+        display: none;
+    }
+
+    .traditions__left {
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: $bp-tablet) {
+
+    .traditions {
+        padding: 40px 0 20px 0;
+    }
+
+    .traditions__text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+}

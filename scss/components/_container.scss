@@ -3,3 +3,11 @@
     margin: 0 auto;
     padding: 0 24px;
 }
+
+@media (max-width: $bp-tablet) {
+    
+    .container {
+        padding: 0 12px;
+    }
+
+}

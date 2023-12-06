@@ -14,3 +14,41 @@
     font-size: 20px;
     font-weight: 300;
 }
+
+@media (max-width: $bp-sub-tablet) {
+
+    .advantages {
+        padding: 40px 0 0 0;
+        background: transparent;
+    }
+
+    .advantages__list {
+        padding: 24px 40px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        border-radius: 24px;
+        background: var(--color-brand-light);
+    }
+
+    .advantages__item {
+        color: var(--color-primary-dark);
+    }
+
+}
+
+@media (max-width: $bp-mobile) {
+
+    .advantages__item {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: $bp-mobile) {
+
+    .advantages__list {
+        padding: 24px;
+    }
+
+}
