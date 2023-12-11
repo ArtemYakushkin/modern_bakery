@@ -139,3 +139,52 @@
     bottom: -100px;
     right: -100px;
 }
+
+@media (max-width: $bp-tablet) {
+
+    .modal {
+        padding: 72px 42px;
+        max-height: 720px;
+    }
+
+    .modal__form-title {
+        font-size: 44px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .modal__form-text {
+        font-size: 16px;
+        margin-bottom: 42px;
+    }
+
+    .modal__baton {
+        display: none;
+    }
+    
+}
+
+@media (max-width: $bp-mobile) {
+
+    .modal {
+        padding: 42px 12px;
+        border-radius: 22px;
+        max-height: 600px;
+    }
+
+    .modal__btn-close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .modal__form-title {
+        font-size: 44px;
+        max-width: 320px;
+        margin-bottom: 16px;
+    }
+
+    .modal__form-text {
+        font-size: 16px;
+    }
+
+}

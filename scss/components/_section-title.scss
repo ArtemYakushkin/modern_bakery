@@ -8,6 +8,14 @@
     color: var(--color-brand-normal);
 }
 
+@media (max-width: $bp-desktop) {
+
+    .section-title {
+        font-size: 52px;
+    }
+
+}
+
 @media (max-width: $bp-tablet) {
 
     .section-title {

@@ -35,6 +35,7 @@
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 166px;
 }
 
 .footer__nav-list {
@@ -98,4 +99,70 @@
     color: var(--color-copy);
     font-size: 14px;
     font-weight: 400;
+}
+
+@media (max-width: $bp-desktop) {
+    
+    .footer__wrapper {
+        gap: 80px;
+    }
+
+}
+
+@media (max-width: $bp-sub-tablet) {
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: $bp-tablet) {
+
+    .footer {
+        padding: 32px 0;
+    }
+
+    .footer::before {
+        position: absolute;
+        content: '';
+        background-image: url(../images/mobile/baton-1.png);
+        background-repeat: no-repeat;
+        width: 93px;
+        height: 197px;
+        background-size: 100%;
+        left: 0;
+        top: 44px;
+    }
+
+    .footer::after {
+        position: absolute;
+        content: '';
+        background-image: url(../images/mobile/baton-2.png);
+        background-repeat: no-repeat;
+        width: 112px;
+        height: 100px;
+        background-size: 100%;
+        right: 0;
+        bottom: 0;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .footer__nav-list {
+        align-items: center;
+    }
+
+    .footer__address-list {
+        align-items: center;
+    }
+
+    .footer__logo {
+        margin-bottom: 32px;
+    }
+
 }
